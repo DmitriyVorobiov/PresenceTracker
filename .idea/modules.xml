@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PresenceTracker.iml" filepath="$PROJECT_DIR$/PresenceTracker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loripresencetracker/loripresencetracker.iml" filepath="$PROJECT_DIR$/loripresencetracker/loripresencetracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tracker-lib/tracker-lib.iml" filepath="$PROJECT_DIR$/tracker-lib/tracker-lib.iml" />
     </modules>
   </component>
 </project>
