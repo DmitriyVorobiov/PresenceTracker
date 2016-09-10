@@ -10,6 +10,8 @@ public class NoteEntity {
     Long endTime;
     String comment;
 
+    // comment to perform merge
+
     public Integer getId() {
         return id;
     }
