@@ -1,1 +1,1 @@
-include ':tracker-lib', ':loripresencetracker'
+include ':tracker-lib', ':tracker-client'

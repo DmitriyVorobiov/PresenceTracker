@@ -10,13 +10,10 @@ public class NoteEntity {
     Long endTime;
     String comment;
 
-    // comment to perform merge 2
-
     public Integer getId() {
         return id;
     }
 
-//    commit 3
     public void setId(Integer id) {
         this.id = id;
     }

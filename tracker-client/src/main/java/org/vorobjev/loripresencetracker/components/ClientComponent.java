@@ -5,17 +5,16 @@ import android.content.SharedPreferences;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import org.vorobjev.loripresencetracker.LoriPresenceTrackerApplication;
-import org.vorobjev.loripresencetracker.adapters.NotesAdapter;
+import org.vorobjev.loripresencetracker.ClientApplication;
 import org.vorobjev.loripresencetracker.modules.SharedPreferencesModule;
 
 @Component(modules = {
         SharedPreferencesModule.class})
 
 @Singleton
-public interface LoriPresenceTrackerComponent {
+public interface ClientComponent {
 
-    void inject(LoriPresenceTrackerApplication app);
+    void inject(ClientApplication app);
 
     SharedPreferences provideSharedPreferences();
 }

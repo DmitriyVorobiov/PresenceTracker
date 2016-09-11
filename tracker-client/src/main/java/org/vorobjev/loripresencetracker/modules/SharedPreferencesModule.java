@@ -7,7 +7,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import org.vorobjev.loripresencetracker.LoriPresenceTrackerApplication;
+import org.vorobjev.loripresencetracker.ClientApplication;
 
 @Module
 public class SharedPreferencesModule {
@@ -17,7 +17,7 @@ public class SharedPreferencesModule {
     @Provides
     @Singleton
     public SharedPreferences provideSharedPreferences() {
-        mPreferences = PreferenceManager.getDefaultSharedPreferences(LoriPresenceTrackerApplication.getInstance());
+        mPreferences = PreferenceManager.getDefaultSharedPreferences(ClientApplication.getInstance());
         return initDefaultSettings(mPreferences);
     }
 

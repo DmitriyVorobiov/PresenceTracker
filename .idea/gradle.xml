@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/loripresencetracker" />
+            <option value="$PROJECT_DIR$/tracker-client" />
             <option value="$PROJECT_DIR$/tracker-lib" />
           </set>
         </option>

@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.vorobjev.loripresencetracker.R;
+import org.vorobjev.presencetracker.adapters.ItemsAdapter;
 import org.vorobjev.presencetracker.db.NoteEntity;
 import org.vorobjev.presencetracker.utils.DateUtils;
 
@@ -14,7 +15,7 @@ import java.util.Collection;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class NotesAdapter extends org.vorobjev.presencetracker.adapters.NotesAdapter {
+public class NotesAdapter extends ItemsAdapter {
 
     public NotesAdapter(Activity context, Collection<NoteEntity> list) {
         super(context, R.layout.item_note, list);

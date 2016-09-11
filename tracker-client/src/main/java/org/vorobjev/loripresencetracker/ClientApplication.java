@@ -3,7 +3,7 @@ package org.vorobjev.loripresencetracker;
 import org.vorobjev.loripresencetracker.components.DaggerLoriPresenceTrackerComponent;
 import org.vorobjev.loripresencetracker.modules.SharedPreferencesModule;
 
-public class LoriPresenceTrackerApplication extends org.vorobjev.presencetracker.PresenceTrackerApplication {
+public class ClientApplication extends org.vorobjev.presencetracker.PresenceTrackerApplication {
 
     public void onCreate() {
         super.onCreate();

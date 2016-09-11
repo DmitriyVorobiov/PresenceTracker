@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import org.vorobjev.loripresencetracker.R;
 import org.vorobjev.loripresencetracker.adapters.NotesAdapter;
-import org.vorobjev.presencetracker.activity.PresenceTrackerNotesActivity;
+import org.vorobjev.presencetracker.activity.ItemsActivity;
 import org.vorobjev.presencetracker.common.IntentAttributes;
 import org.vorobjev.presencetracker.db.NoteEntity;
 
@@ -20,14 +20,14 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnItemClick;
 
-public class NotesActivity extends PresenceTrackerNotesActivity {
+public class NotesActivity extends ItemsActivity {
 
     @Bind(R.id.jobs_list)
     ListView listView;
 
     @OnItemClick(R.id.jobs_list)
     void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        startActivity(new Intent(NotesActivity.this, NoteActivity.class).putExtra(IntentAttributes.NOTE_ID, ((NoteEntity) parent.getItemAtPosition(position)).getId()));
+        startActivity(new Intent(NotesActivity.this, NoteActivity.class).putExtra(IntentAttributes.ITEM_ID, ((NoteEntity) parent.getItemAtPosition(position)).getId()));
     }
 
     @Override
